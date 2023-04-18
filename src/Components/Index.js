@@ -21,13 +21,11 @@ export default function Index() {
 
     return (
         <div>
-            <h1>  <Link to="/"><p>Home</p></Link></h1>
-            {/* <h1>List of Resources</h1> */}
             <ul>
                 {allResources.map(resource => (
-                    <li key={resource.id}>
+                    <ul key={resource.id}>
                         <a href={`/transactions/${resource.id}`}>{resource.item_name}</a>
-                    </li>
+                    </ul>
                 ))}
             </ul>
         </div>
