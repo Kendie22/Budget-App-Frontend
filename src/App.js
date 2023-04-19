@@ -15,7 +15,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/transactions" element={<Index />} />
-          <Route path="/transactions/:id" element={<Show />} />
+          <Route path="/transactions/edit" element={<Show />} />
           <Route path="/transactions/new" element={<Create />} />
 
         </Routes>

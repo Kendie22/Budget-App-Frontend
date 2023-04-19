@@ -2,11 +2,20 @@ import axios from "axios"
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
+    const mystyle = {
+        color: "cream",
+        backgroundColor: "turquoise",
+        padding: "10px",
+    }
+
     return (
-        <nav>
+        <nav style={mystyle}>
             <h1>Budget App</h1>
 
-            <h1>  <Link to="/"><p>Home</p></Link></h1><button>
+            <button>
+                <Link to="/"><p>Home</p></Link></button>
+
+            <button>
                 <Link to="/transactions">All Transactions</Link>
             </button>
             <button>

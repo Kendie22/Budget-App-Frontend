@@ -59,7 +59,7 @@ function Create() {
                 <label>
                     Amount:
                     <input
-                        type="text"
+                        type="number"
                         id="amount"
                         value={userInput.amount}
                         onChange={handleInputChange}
