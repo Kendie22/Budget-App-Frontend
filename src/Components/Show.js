@@ -23,10 +23,10 @@ export default function Show() {
             .put(`${API}/transactions/${id}`, editResources)
             .then((response) => {
                 setEditResources(response.data);
-                navigate(`/transactions`);
+                navigate(`/transactions/${id}`);
             })
             .catch((error) => {
-                console.log(error);
+                // console.log(error);
             });
     };
 
