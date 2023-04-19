@@ -5,6 +5,8 @@ Backend link - https://budgetapp-backend-rdkj.onrender.com/
 Frontend link-
 https://lovely-nougat-fe1f40.netlify.app/
 
+Trello link - https://trello.com/b/vSpxqo5l/budgeting-app-project
+
 Installation
 Getting Started
 
