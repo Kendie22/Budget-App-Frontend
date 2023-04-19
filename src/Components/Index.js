@@ -24,7 +24,7 @@ export default function Index() {
             <ul>
                 {allResources.map(resource => (
                     <ul key={resource.id}>
-                        <a href={`/transactions/${resource.id}`}>{resource.item_name}</a>
+                        <Link to={`/transactions/${resource.id}`}>{resource.item_name}</Link>
                     </ul>
                 ))}
             </ul>

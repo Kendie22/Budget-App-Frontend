@@ -7,7 +7,6 @@ export default function NavBar() {
         backgroundColor: "turquoise",
         padding: "10px",
     }
-
     return (
         <nav style={mystyle}>
             <h1>Budget App</h1>

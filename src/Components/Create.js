@@ -15,7 +15,6 @@ function Create() {
     });
 
     const [submitStatus, setSubmitStatus] = useState('');
-    // console.log(uuidv4())
 
     const API = process.env.REACT_APP_API_URL;
     const navigate = useNavigate();
@@ -39,7 +38,7 @@ function Create() {
     };
 
     return (
-        <div>
+        <div className='form'>
             {submitStatus === 'success' && (
                 <div>Transaction successfully created!</div>
             )}
@@ -53,6 +52,7 @@ function Create() {
                         type="text"
                         id="item_name"
                         value={userInput.item_name}
+                        placeholder='Name'
                         onChange={handleInputChange}
                     />
                 </label>
@@ -62,6 +62,7 @@ function Create() {
                         type="number"
                         id="amount"
                         value={userInput.amount}
+                        placeholder='Amount'
                         onChange={handleInputChange}
                     />
                 </label>
@@ -71,6 +72,7 @@ function Create() {
                         type="text"
                         id="date"
                         value={userInput.date}
+                        placeholder='Date'
                         onChange={handleInputChange}
                     />
                 </label>
@@ -80,6 +82,7 @@ function Create() {
                         type="text"
                         id="from"
                         value={userInput.from}
+                        placeholder='From'
                         onChange={handleInputChange}
                     />
                 </label>
@@ -89,6 +92,7 @@ function Create() {
                         type="text"
                         id="category"
                         value={userInput.category}
+                        placeholder='Category'
                         onChange={handleInputChange}
                     />
                 </label>
